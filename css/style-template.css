@@ -68,4 +68,5 @@ body {
   font-family: var(--font-main);
   color: antiquewhite;
   background-color: var(--c-dark);
+  text-align: center;
 }
