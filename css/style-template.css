@@ -66,7 +66,63 @@
 
 body {
   font-family: var(--font-main);
-  color: antiquewhite;
+}
+
+/* front page */
+
+.front-page {
+  width: 320px;
   background-color: var(--c-dark);
+  padding: 30px 10px 55px 10px;
+  box-sizing: border-box;
+}
+
+.fornt-page-my-name {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  text-transform: uppercase;
   text-align: center;
+  color: var(--txt-c-accent);
+}
+
+.fornt-page-profession {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 42px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--txt-c-light);
+}
+
+.fornt-page-description {
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--txt-c-light);
+}
+
+.navigation {
+  width: 100%;
+}
+
+.hire-me-btn {
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: var(--txt-c-accent);
+  text-decoration: none;
+}
+
+.mobile-menu {
+  width: 30px;
+  height: 30px;
+  background-color: var(--txt-c-accent);
+  display: block;
+}
+
+.mobile-menu i {
+  color: var(--txt-c-light);
+  width: 10px;
 }
