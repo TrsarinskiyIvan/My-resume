@@ -68,6 +68,21 @@ body {
   font-family: var(--font-main);
 }
 
+/* common */
+
+.accent-btn {
+  background-color: var(--c-accent);
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--txt-c-light);
+  padding: 20px 35px;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
 /* front page */
 
 .front-page {
@@ -75,6 +90,9 @@ body {
   background-color: var(--c-dark);
   padding: 30px 10px 55px 10px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .fornt-page-my-name {
@@ -84,6 +102,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: var(--txt-c-accent);
+  margin: 35px 0 15px 0;
 }
 
 .fornt-page-profession {
@@ -93,6 +112,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: var(--txt-c-light);
+  margin-bottom: 20px;
 }
 
 .fornt-page-description {
@@ -100,10 +120,14 @@ body {
   line-height: 150%;
   text-align: center;
   color: var(--txt-c-light);
+  margin-bottom: 20px;
 }
 
 .navigation {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .hire-me-btn {
@@ -113,16 +137,102 @@ body {
   letter-spacing: 0.05em;
   color: var(--txt-c-accent);
   text-decoration: none;
+  margin-right: 20px;
 }
 
 .mobile-menu {
   width: 30px;
   height: 30px;
   background-color: var(--txt-c-accent);
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .mobile-menu i {
   color: var(--txt-c-light);
-  width: 10px;
+}
+
+.navigation-part {
+  display: flex;
+  align-items: center;
+}
+.front-page-galery-btn {
+  margin-bottom: 40px;
+}
+
+.front-page-my-photo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.front-page-my-descr {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--txt-c-light);
+  margin-bottom: 15px;
+}
+
+.front-page-video-btn {
+  border: 2px solid var(--c-accent);
+  background: transparent;
+  color: var(--txt-c-accent);
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+.fa-play {
+  font-size: 9px;
+  margin-right: 7px;
+}
+
+.front-page-laptop {
+  width: 250px;
+  margin-bottom: 40px;
+}
+
+.expirience-title {
+  margin: 0;
+  width: 240px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--txt-c-light);
+  margin-bottom: 30px;
+}
+
+.expirience-skil-items {
+}
+
+.expirience-skil {
+  display: flex;
+  align-items: center;
+  margin: 0 0 30px 0;
+}
+
+.expirience-dots {
+  color: var(--c-accent);
+  font-size: 7px;
+  margin-right: 10px;
+}
+
+.expirience-text {
+  color: var(--txt-c-light);
+  margin: 0;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.expirience-dots-item-accent {
+  color: var(--txt-c-light);
 }
