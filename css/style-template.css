@@ -66,6 +66,7 @@
 
 body {
   font-family: var(--font-main);
+  width: 320px;
 }
 
 /* common */
@@ -413,6 +414,7 @@ body {
 
 .team-projects {
   width: 320px;
+  margin: 0;
 }
 
 .team-projects .container {
@@ -454,4 +456,46 @@ body {
 
 .team-project-item:last-child {
   margin-bottom: 0;
+}
+
+/* callback-form-container */
+
+.callback-form-container {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  background: var(--c-dark);
+  padding: 35px 20px 35px 20px;
+  box-sizing: border-box;
+}
+
+.callback-form-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--txt-c-light);
+  width: 260px;
+  margin: 0 0 20px 0;
+}
+
+.callback-form-descr {
+  font-size: 17px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--txt-c-light);
+  width: 260px;
+  margin: 0 0 20px 0;
+}
+
+.calback-form-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 10px 10px 15px 10px;
+  border-bottom: 1px solid var(--c-grey-blue);
+  text-align: center;
+  color: var(--txt-c-light);
+  margin-bottom: 30px;
 }
