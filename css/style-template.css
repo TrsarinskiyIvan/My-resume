@@ -507,6 +507,10 @@ body {
   padding-bottom: 75px;
 }
 
+.calculator-container {
+  margin: 0 10px 0 10px;
+}
+
 .calculator-icon {
   width: 195px;
 }
