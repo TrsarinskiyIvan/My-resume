@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .modal-content{
+            display: none;
+        }
+    </style>
+
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/choices.min.css">
@@ -18,7 +25,7 @@
         <a href="" class="logo-link"><img src="./img/goit-logo.svg" alt="Logo"></a>
         <div class="navigation-part">
             <a href="" class="hire-me-btn">— HIRE ME</a>
-            <a href="" class="mobile-menu"><i class="fas fa-bars"></i></a>
+            <a id="mobile-menu-btn" href="" class="mobile-menu"><i class="fas fa-bars"></i></a>
         </div>
     </nav>
 
@@ -29,7 +36,7 @@
     <button class="front-page-galery-btn accent-btn">See my recent works —</button>
     <img src="./img/me.jpg" alt="" class="front-page-my-photo">
     <p class="front-page-my-descr">About me in 2 minutes</p>
-    <button class="front-page-video-btn"><i class="fas fa-play"></i> PLAY</button>
+    <button id="my-video-btn" class="front-page-video-btn"><i class="fas fa-play"></i> PLAY</button>
 
     <img class ="front-page-laptop" src="./img/laptop.svg" alt="">
     <div class="expirience-continer">
@@ -100,7 +107,7 @@
 </div>
 </section>
 
-<section class="about-title">
+<section id="id-about" class="about-title">
     <div class="container container-left">
         <h3 class="section-title about-title">I code things from scratch_</h3>
         <p class="about-descr">
@@ -126,7 +133,7 @@
     </div>
 </section>
 
-<section class="personal-projects">
+<section id="id-projects" class="personal-projects">
     <div class="container">
         <h3 class="section-title personal-projects-title">My personal _projects</h3>
 
@@ -249,7 +256,7 @@
     </div>
 </section>
 
-<section class="calculator">
+<section id="id-calculator" class="calculator">
     <div class="calculator-container">
         <h3 class="calculator-title section-title">
             Calculate_ the cost of a future project
@@ -317,7 +324,7 @@
     </div>
 </section>
 
-<footer>
+<footer id="contacts">
     <h3>Ivan Tsarinskiy</h3>
     <p>Frontend Developer</p>
     <a href="tel:+380663787619">+38 (066) 37 87 619</a>
@@ -328,10 +335,43 @@
         <i class="fab fa-facebook"></i>
         <i class="fab fa-linkedin-in"></i>
     </div>
-
-
 </footer>
+
+    <!-- modals -->
+
+    <div class="modals-wrapper">
+        <!-- mobile-menu -->
+    <div class="modal-content">
+        <div class="modal-mobile-menu">
+            <div class="modal mobile-menus">
+                    <div class="container mobile-menu-container">
+                        <i id="mobile-menu" class="fas fa-times modal-close-btn mobile-menu-close-btn"></i>
+                        <nav class="mobile-menu-items">
+                            <a href="#id-about" class="mobile-menu-item">about</a>
+                            <a href="#id-projects" class="mobile-menu-item">progects</a>
+                            <a href="#id-calculator" class="mobile-menu-item">cost calculator</a>
+                            <a href="#contacts" class="mobile-menu-item">contacts</a>
+                        </nav>
+                        <div class="contacts-container">
+                            <a class="mobile-menu-item-contacts" href="tel:+380663787619">+38 (066) 37 87 619</a>
+                            <a class="mobile-menu-item-contacts" href="mail:itsarinskiy@gmail.com">itsarinskiy@gmail.com</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-content modal-video">
+        <i id ="my-video-modal" class="fas fa-times modal-close-btn mobile-menu-close-btn"></i>
+        <div class="my-video-container">
+            <video controls class="my-video-content" src="./video/video.mp4"></video>
+        </div>
+    </div>
+
+    </div>
+
 <script src="./js/choices.min.js"></script>
 <script src="./js/calculator.js"></script>
+<script src="./js/modals.js"></script>
 </body>
 </html>

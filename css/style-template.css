@@ -64,6 +64,10 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-main);
   width: 320px;
@@ -119,6 +123,118 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: var(--txt-c-light);
+}
+
+/* modalsd */
+
+.body-scroll-disable {
+  overflow: hidden;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 320px;
+}
+
+.modal-content {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+  display: block;
+}
+
+.modal-active {
+  display: block;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-video {
+  background: rgb(77, 95, 128, 0.8);
+}
+
+.mobile-menu-container {
+  height: 70%;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.mobile-menus {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.mobile-menu-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu-item {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #4f5b70;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.mobile-menu-item-contacts {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #4f5b70;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.contacts-container {
+  text-align: center;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 18px;
+  color: var(--c-grey-blue);
+  cursor: pointer;
+}
+
+.mobile-menu-close-btn {
+  background: var(--c-accent);
+  padding: 10px 12px;
+}
+
+.my-video-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.my-video-container {
+  padding: 10px 20px;
+}
+
+.modal-video-btn {
+  color: #4f5b70;
+  background: wheat;
+}
+
+.modal-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* front page */
@@ -685,4 +801,6 @@ footer div i {
   border-left: none;
   margin: 0;
   padding-left: 8px;
+}
+.modal {
 }
